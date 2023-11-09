@@ -4,8 +4,19 @@
     box-sizing: border-box;
 }
 
+:focus {
+    outline: none;
+}
+
+.container {
+    padding: 30px;
+    width: 40%;
+    border-radius: 25px;
+    border-color: #709dff;
+    border-style: solid;
+}
 .select_form {
-    width: 30%;
+    width: 50%;
     border-radius: 25px;
     height: 35px;
     border-style: solid;
@@ -15,62 +26,38 @@
     padding-left: 5px;
 }
 .input_form {
-    width: 30%;
-    border-radius: 25px;
+    width: 70%;
     height: 35px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #709dff;
-    margin-top: 10px;
+    margin-bottom: 10px;
     padding-left: 5px;
+    border: none;
+    border-bottom: 2px solid#709dff;
     
-    
+}
 
+.input_form::-webkit-inner-spin-button, .input_form::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .select_form:hover {
     border-color: #3a75f5;
-    -webkit-box-shadow: 4px 4px 74px 0px rgba(34, 60, 80, 0.14);
-    -moz-box-shadow: 4px 4px 74px 0px rgba(34, 60, 80, 0.14);
-    box-shadow: 4px 4px 74px 0px rgba(34, 60, 80, 0.14);
+
 }
 .input_form:hover {
     border-color: #3a75f5;
-    -webkit-box-shadow: 4px 4px 74px 0px rgba(34, 60, 80, 0.14);
-    -moz-box-shadow: 4px 4px 74px 0px rgba(34, 60, 80, 0.14);
-    box-shadow: 4px 4px 74px 0px rgba(34, 60, 80, 0.14);
+ 
 }
 
 .select_form:focus {
     border-color: #3a75f5;
-    -webkit-box-shadow: 4px 4px 74px 0px rgba(34, 60, 80, 0.14);
-    -moz-box-shadow: 4px 4px 74px 0px rgba(34, 60, 80, 0.14);
-    box-shadow: 4px 4px 74px 0px rgba(34, 60, 80, 0.14);
+
 }
 .input_form:focus {
     border-color: #3a75f5;
-    -webkit-box-shadow: 4px 4px 74px 0px rgba(34, 60, 80, 0.14);
-    -moz-box-shadow: 4px 4px 74px 0px rgba(34, 60, 80, 0.14);
-    box-shadow: 4px 4px 74px 0px rgba(34, 60, 80, 0.14);
     
 }
 
-.select_form:active {
-    border-color: #3a75f5;
-    
-}
-.input_form:active {
-    border-color: #3a75f5;
-    
-}
-
-.select_form:focus-visible {
-    outline: none;
-}
-
-.input_form:focus-visible {
-    outline: none;
-}
 
 .input_button {
 
