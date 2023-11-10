@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: Jost;
-    src: url(./fonts/Raleway-VariableFont_wght.ttf);
+    src: url(./fonts/Jost-VariableFont_wght.ttf);
 }
 * *, *:before, *:after  {
     margin: 0px;
@@ -30,9 +30,10 @@ p, label{
     color: #0d172a;
 }
 
-.flex-container{
+.flex-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .container {
@@ -43,6 +44,12 @@ p, label{
     box-shadow: -1px -1px 17px -1px rgba(115, 115, 115, 0.5);
     margin-top: 45px;
 }
+
+#charts {
+    width: 90%;
+    text-align: center;
+}
+
 .select_form {
     width: 50%;
     border-radius: 35px;
@@ -117,6 +124,27 @@ p, label{
   background-color: #709dff;
   color: #fff;
 }
+
+#floating-button {
+    position: fixed;
+    z-index: 100;
+    bottom: 20px;
+    right: 20px;
+    background-color: #709dff;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Raleway;
+  }
+   
+  #floating-button:hover {
+    background-color: #9ab4fd;
+  }
 
 @media (min-width: 768px) {
 .input_button {

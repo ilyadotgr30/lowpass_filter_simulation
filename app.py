@@ -36,7 +36,7 @@ def filter_signal():
     cutoff_frequency = float(request.form['cutoff_frequency'])
     filter_order = int(request.form['filter_order'])
 
-    fs = 1000  # Частота дискретизации (может потребоваться изменить)
+    fs = 1000  # Частота дискретизации (можно изменить)
 
     noisy_signal = generate_signal(signal_type, amplitude, frequency, noise_amplitude)
 
