@@ -8,11 +8,12 @@
 <body>
     <h1>Симулятор фильтра низких частот</h1>
     
+    <div class="flex-container">
     <div class="container">
     <form id="signal-form" action="/filter" method="POST">
 
         <div>
-            <label for="signal_type">Тип сигнала:</label>
+            <label>Тип сигнала:</label>
             <select name="signal_type" id="signal_type" class="select_form">
                 <option value="sine">Синусоидальный</option>
                 <option value="square">Квадратный</option>
@@ -20,29 +21,30 @@
             </select>
         </div>
         <div>
-            <p><span>Амплитуда:</span></p>
+            <p><span>Амплитуда</span></p>
             <input type="number" placeholder="Амплитуда сигнала" name="amplitude" id="amplitude" step="0.01" class="input_form"><br>
         </div>
         <div>
-            <p><span>Частота:</span></p>
+            <p><span>Частота</span></p>
             <input type="number" placeholder="Частота сигнала" name="frequency" id="frequency" step="0.01" class="input_form"><br>
         </div>
         <div>
-            <p><span>Амплитуда шума:</span></p>
+            <p><span>Амплитуда шума</span></p>
             <input type="number" placeholder="Амплитуда шума" name="noise_amplitude" id="noise_amplitude" step="0.01"class="input_form"><br>
         </div>
         <div>
-            <p><span>Частота среза фильтра:</span></p>
+            <p><span>Частота среза фильтра</span></p>
             <input type="number" placeholder="Частота среза фильтра" name="cutoff_frequency" id="cutoff_frequency" step="0.01" class="input_form"><br>
         </div>
         <div>
-            <p><span>Порядок фильтра:</span></p>
+            <p><span>Порядок фильтра</span></p>
             <input type="number" placeholder="Порядок фильтра" name="filter_order" id="filter_order" step="1" class="input_form"><br>
         </div>
 
         <input type="submit" value="Симулировать" class="input_button">
 
     </form>
+    </div>
     </div>
 
     <div id="charts">
